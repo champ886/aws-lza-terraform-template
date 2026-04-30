@@ -56,3 +56,14 @@ variable "security_account_email" {
   description = "Email for the security account"
   type        = string
 }
+
+# -----------------------------------------------
+# IAM ANALYZER TYPE
+# ORGANIZATION scans all accounts in the org
+# Change to ACCOUNT to scan a single account only
+# -----------------------------------------------
+variable "analyzer_type" {
+  description = "IAM Access Analyzer type — ACCOUNT or ORGANIZATION"
+  type        = string
+  default     = "ORGANIZATION"
+}

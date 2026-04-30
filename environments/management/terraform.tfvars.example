@@ -17,3 +17,9 @@ workload_prod_account_email = "aws-prod-workload@YOUR_DOMAIN"
 
 security_account_name  = "security-account"
 security_account_email = "aws-security@YOUR_DOMAIN"
+
+# -----------------------------------------------
+# IAM ACCESS ANALYZER
+# ORGANIZATION scans across all accounts in the org
+# -----------------------------------------------
+analyzer_type = "ORGANIZATION"

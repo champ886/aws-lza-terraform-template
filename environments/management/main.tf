@@ -55,3 +55,18 @@ module "scp" {
 
   depends_on = [module.organization]
 }
+
+# -----------------------------------------------
+# IAM ACCESS ANALYZER MODULE
+# Free — scans all accounts in the org for
+# overly permissive resource policies
+# Requires access-analyzer.amazonaws.com enabled
+# in aws_service_access_principals in org module
+# -----------------------------------------------
+module "iam_analyzer" {
+  source        = "../../modules/iam-analyzer"
+  environment   = var.environment
+  analyzer_type = var.analyzer_type
+
+  depends_on = [module.organization]
+}
