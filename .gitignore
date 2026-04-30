@@ -1,0 +1,38 @@
+# -----------------------------------------------
+# TERRAFORM WORKING DIRECTORY
+# -----------------------------------------------
+.terraform/
+.terraform.lock.hcl
+
+# -----------------------------------------------
+# TFVARS — contains account IDs and emails
+# Use terraform.tfvars.example instead
+# -----------------------------------------------
+terraform.tfvars
+*.auto.tfvars
+
+# -----------------------------------------------
+# STATE FILES — live in S3 not in git
+# -----------------------------------------------
+*.tfstate
+*.tfstate.backup
+
+# -----------------------------------------------
+# SAVED PLAN FILES
+# -----------------------------------------------
+tfplan
+*.tfplan
+
+# -----------------------------------------------
+# CRASH LOGS
+# -----------------------------------------------
+crash.log
+crash.*.log
+
+# -----------------------------------------------
+# SENSITIVE VARIABLE FILES
+# -----------------------------------------------
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json

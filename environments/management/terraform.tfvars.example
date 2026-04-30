@@ -1,0 +1,19 @@
+# -----------------------------------------------
+# Copy this file to terraform.tfvars and fill in
+# your real values before running terraform apply
+# -----------------------------------------------
+
+aws_region         = "YOUR_REGION"
+environment        = "management"
+org_id             = "YOUR_ORG_ID"
+log_retention_days = 90
+approved_regions   = ["YOUR_REGION"]
+
+workload_dev_account_name   = "dev-workload-account"
+workload_dev_account_email  = "aws-dev-workload@YOUR_DOMAIN"
+
+workload_prod_account_name  = "prod-workload-account"
+workload_prod_account_email = "aws-prod-workload@YOUR_DOMAIN"
+
+security_account_name  = "security-account"
+security_account_email = "aws-security@YOUR_DOMAIN"
